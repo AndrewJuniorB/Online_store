@@ -9,7 +9,7 @@ const userRouter = require('./userRouter');
 router.use('/user', userRouter);
 router.use('/brand', brandRouter);
 router.use('/type', typeRouter);
-router.use('/item', itemRouter);
+router.use('/device', itemRouter);
 
 
 module.exports = router;

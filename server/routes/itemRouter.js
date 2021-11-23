@@ -2,9 +2,9 @@ const Router = require('express');
 const router = new Router();
 const itemController = require('../controllers/itemController.js');
 
-router.post('/');
-router.get('/:id');
-router.get('/');
+router.post('/', itemController.create);
+router.get('/:id', itemController.getAll);
+router.get('/', itemController.getOne);
 
 
 module.exports = router;
