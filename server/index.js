@@ -1,13 +1,18 @@
 require('dotenv').config();
 const express = require('express');
 const sequelize = require('./db.js');
-const models = require('./models/models.js')
+const models = require('./models/models.js');
 const cors = require('cors');
+const router = require('./routes/index.js');
+const errorHandler = require('./middleware/ErrorHandlingMiddleware.js');
 
 const app = express();
 // CORS adding;
 app.use(cors());
 app.use(express.json());
+app.use('/api', router);
+//Error middleware handler (needs be last one)
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 3000;
 
