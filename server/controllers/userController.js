@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt');
 const {User, Basket} = require('../models/models.js');
 const jwt = require('jsonwebtoken');
 
+
 const generateJwt = (id, email, role) => {
     return jwt.sign(
       {id, email, role},
@@ -47,11 +48,8 @@ class UserController {
   }
 
   async check(req, res, next) {
-    const {id} = req.query;
-    if(!id) {
-      return next(ApiError.badRequest('No id provided! Please provide correct ID'));
-    }
-    res.json(id);
+    const token = generateJwt(req.user.id, req.user.email, req.user.role);
+    return res.json({token});
   }
 
 
