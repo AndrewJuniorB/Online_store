@@ -13,7 +13,7 @@ module.exports = function (role) {
         }
         const decoded = jwt.verify(token, process.env.SECRET_KEY);
         if (decoded.role !== role) {
-          res.status(401).json({message: 'No Admin Rights, No Acccess'})
+          return res.status(403).json({message: 'No Admin Rights, No Acccess'})
         }
         req.user = decoded;
         next();
@@ -21,5 +21,6 @@ module.exports = function (role) {
       res.status(401).json({message: '401 Unauthorized!'});
     }
 
-}
 
+  }
+}

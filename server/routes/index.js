@@ -6,6 +6,7 @@ const typeRouter = require('./typeRouter');
 const userRouter = require('./userRouter');
 
 
+
 router.use('/user', userRouter);
 router.use('/brand', brandRouter);
 router.use('/type', typeRouter);
