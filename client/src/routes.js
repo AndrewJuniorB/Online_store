@@ -18,7 +18,7 @@ export const authRoutes = [
   }
 ]
 
-export const punlicRoutes = [
+export const publicRoutes = [
   {
     path: SHOP_ROUTE,
     Component: Shop
