@@ -14,7 +14,10 @@ export default class DeviceStore {
       { id: 2,  name: "KitchenAid"},
       { id: 3,  name: "Delonghi"},
       { id: 4,  name: "Bosch MV"},
-      { id: 6,  name: "Bosch 111 "}
+      { id: 6,  name: "Bosch 111 "},
+
+
+
     ]
 
     this._devices = [
@@ -24,6 +27,9 @@ export default class DeviceStore {
       {id: 5,name: "385 CFM ",price: 349,rating: 0,img: "51f9d737-4208-47c7-ba73-980cb818ab92.jpg", typeId: 2, brandId: 4 },
       {id: 8,name: "BOSCH CFM ",price: 349,rating: 0,img: "8cbcb2b5-9105-4a73-9c13-533a3c43b0ac.jpg", typeId: 2, brandId: 4 }
     ]
+
+    this._selectedType = {};
+    this._selectedBrand = {};
 
     makeAutoObservable(this);
   }
@@ -40,6 +46,14 @@ export default class DeviceStore {
     this._devices = devices
   }
 
+  setSelectedType(type) {
+    this._selectedType = type
+  }
+
+  setSelectedBrand(brand) {
+    this._selectedBrand = brand
+  }
+
   get types() {
     return this._types
   }
@@ -52,4 +66,16 @@ export default class DeviceStore {
   {
     return this._devices
   }
+
+  get selectedType()
+  {
+    return this._selectedType
+  }
+
+  get selectedBrand()
+  {
+    return this._selectedBrand
+  }
+
+
 }

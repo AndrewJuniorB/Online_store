@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import { NavLink } from 'react-router-dom';
 import { SHOP_ROUTE } from '../utils/consts.js';
-
 import {observer} from 'mobx-react-lite';
 import Button from "react-bootstrap/Button";
 

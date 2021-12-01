@@ -6,6 +6,7 @@ import {NavLink, useLocation} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import {observer} from 'mobx-react-lite';
 import Row from 'react-bootstrap/Row';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 
 const Auth = observer(() => {
@@ -28,7 +29,7 @@ style={{height: window.innerHeight - 54}}>
         placeholder='Please enter your Password...'
       />
 
-      <Row className='d-flex justify-content-between mt-3 pl-3 pr-3'>
+      <ListGroup horizontal className='d-flex justify-content-between mt-3 pl-3 pr-3'>
           {isLogin ?
             <div>
               Need Account? <NavLink to={REGISTRATION_ROUTE}> Sign In </NavLink>
@@ -38,12 +39,12 @@ style={{height: window.innerHeight - 54}}>
               You have an account? <NavLink to={LOGIN_ROUTE}> Log In </NavLink>
             </div>
           }
-          <Button className='mt-3'
+          <Button className='mt-3 pl-3 pr-3'
             variant={'outline-primary'}>
               {isLogin ? 'Login' : 'Sign In'}
           </Button>
 
-      </Row>
+      </ListGroup>
     </Form>
   </Card>
 </Container>
