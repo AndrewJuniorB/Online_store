@@ -1,15 +1,16 @@
 import React, {useContext} from 'react';
 import { observer } from 'mobx-react-lite';
 import {Context} from '../index.js';
-import {Row, Card} from 'react-bootstrap';
+import {Row, Card, Col} from 'react-bootstrap';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 const BrandBar = observer(() => {
   const {device} = useContext(Context);
   return(
-  <ListGroup horizontal className='mt-2'>
+  <Row className='d-flex mt-2'>
       {device.brands.map(brand =>
-      <Card
+      <Col md={2}>
+        <Card
         key={brand.id}
         style={{cursor:'pointer'}}
         className='p-3'
@@ -18,8 +19,9 @@ const BrandBar = observer(() => {
         >
         {brand.name}
         </Card>
+        </Col>
       )}
-  </ListGroup>
+  </Row>
 
 
   );

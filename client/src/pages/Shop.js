@@ -4,7 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import TypeBar from '../components/TypeBar.js';
 import BrandBar from '../components/BrandBar.js';
-import {observer} from 'mobx-react-lite'
+import {observer} from 'mobx-react-lite';
+import DeviceList from '../components/DeviceList.js';
 
 const Shop = observer(() => {
   return (
@@ -17,6 +18,7 @@ const Shop = observer(() => {
 
         <Col md={9} className="d-inline-block">
           <BrandBar/>
+          <DeviceList/>
         </Col>
       </Row>
     </Container>
