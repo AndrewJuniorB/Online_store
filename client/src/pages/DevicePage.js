@@ -42,7 +42,7 @@
         <Row className='d-flex flex-column m-3'>
           <h2> Description </h2>
           {description.map((info, index) =>
-          <Row key={info.id} style={{background: index % 2 === 0 ? 'dodgerblue' : 'transparent', padding: 10 }}>
+          <Row key={info.id} style={{background: index % 2 === 0 ? 'lightgray' : 'transparent', padding: 10 }}>
             {info.title}: {info.description}
 
           </Row>
