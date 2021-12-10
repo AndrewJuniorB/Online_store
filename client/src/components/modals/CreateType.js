@@ -1,8 +1,9 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import {Button, Form} from 'react-bootstrap';
+import { observer } from 'mobx-react-lite';
 
-const CreateType = ({show, onHide}) => {
+const CreateType = observer(({show, onHide}) => {
   return (
     <Modal
     show={show}
@@ -24,6 +25,6 @@ const CreateType = ({show, onHide}) => {
     </Modal.Footer>
   </Modal>
   );
-};
+});
 
 export default CreateType;
