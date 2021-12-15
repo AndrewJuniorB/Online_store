@@ -81,10 +81,10 @@ const CreateDevice = observer(({ show, onHide }) => {
 
             <Row className='mt-4' key={i.number}>
               <Col md={4}>
-                <Form.Control placeholder='Type of description'/>
+                <Form.Control placeholder='Type of spec'/>
               </Col>
               <Col md={4}>
-                <Form.Control placeholder='Description'/>
+                <Form.Control placeholder='Specification description'/>
               </Col>
               <Col md={4}>
               <Button

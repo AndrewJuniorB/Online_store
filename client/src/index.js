@@ -1,13 +1,17 @@
 import React, {createContext} from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.js';
-// import reportWebVitals from './reportWebVitals';
+
 import UserStore from './store/UserStore.js';
 import DeviceStore from './store/DeviceStore.js';
 
 
-export const Context = createContext(null);
 
+
+
+export const Context = createContext(null);
+const apiURL = process.env.REACT_APP_API_URL;
+console.log('API', apiURL);
 
 ReactDOM.render(
   <Context.Provider value={{
@@ -19,7 +23,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
+

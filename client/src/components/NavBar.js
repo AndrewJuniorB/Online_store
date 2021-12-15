@@ -13,6 +13,12 @@ import { useNavigate } from 'react-router-dom';
 const NavBar = observer(() => {
   const { user } = useContext(Context);
   let history =  useNavigate();
+
+  const logOut = () => {
+    user.setUser({})
+    user.setIsAuth(false)
+  }
+
   return (
 
     <Navbar bg="primary" variant="dark">
@@ -29,7 +35,7 @@ const NavBar = observer(() => {
         </Button>
         <Button
           variant={'outline-light'}
-          onClick={() => history(LOGIN_ROUTE)}
+          onClick={() => logOut()}
           className='ms-2'
           >
             Log out
@@ -39,7 +45,7 @@ const NavBar = observer(() => {
         :
 
         <Nav style={{ color: 'white' }}>
-        <Button variant={'outline-light'} onClick={()=>{user.setIsAuth(true)}}>Authoriaztion</Button>
+        <Button variant={'outline-light'} onClick={() => history(LOGIN_ROUTE)}>Authoriaztion</Button>
         </Nav>
 
         }

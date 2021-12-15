@@ -1,7 +1,8 @@
 const ApiError = require('../error/ApiError.js');
 const bcrypt = require('bcrypt');
-const {User, Basket} = require('../models/models.js');
 const jwt = require('jsonwebtoken');
+const {User, Basket} = require('../models/models.js');
+
 
 
 const generateJwt = (id, email, role) => {
@@ -12,15 +13,18 @@ const generateJwt = (id, email, role) => {
 
     )
 }
+
 class UserController {
 
-  async registration(req, res) {
-    const {email, password, role} = req.body
+  async registration(req, res, next) {
+    const {email, password, role} = req.body;
+    const candidate = await User.findOne({where: {email}});
+
     if (!email || !password) {
       return next(ApiError.badRequest('Email or Password incorrect !'));
     }
 
-    const candidate = await User.findOne({where: {email}});
+
     if (candidate) {
       return next(ApiError.badRequest('User with current email already exist'));
     }

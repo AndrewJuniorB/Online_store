@@ -2,8 +2,9 @@ import {makeAutoObservable} from 'mobx';
 
 export default class UserStroe {
   constructor() {
-    this._isAuth = true
+    this._isAuth = false
     this._user = {}
+
     makeAutoObservable(this)
   }
 

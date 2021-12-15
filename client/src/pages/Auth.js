@@ -1,18 +1,44 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
 import {Container, Form} from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
-import {REGISTRATION_ROUTE, LOGIN_ROUTE} from '../utils/consts.js';
-import {NavLink, useLocation} from 'react-router-dom';
+import {REGISTRATION_ROUTE, LOGIN_ROUTE, SHOP_ROUTE} from '../utils/consts.js';
+import {NavLink, useLocation, useNavigate} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import {observer} from 'mobx-react-lite';
 import Row from 'react-bootstrap/Row';
 import ListGroup from 'react-bootstrap/ListGroup';
+import {registration, login} from '../http/userAPI.js';
+import { Context } from '../index.js';
+
 
 
 const Auth = observer(() => {
+  const {user} = useContext(Context);
   const location = useLocation();
+  const history = useNavigate();
   const isLogin = location.pathname === LOGIN_ROUTE;
-  console.log('LOCATION',location);
+  // console.log('LOCATION',location);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const click = async () => {
+    try {
+      let data;
+        if (isLogin) {
+          data = await login(email, password);
+        } else {
+          data = await registration(email, password);
+        }
+        user.setUser(user);
+        user.setIsAuth(true);
+        history(SHOP_ROUTE);
+    } catch (e) {
+      if (e.response && e.response.data) {
+        alert(e.response.data.message);
+      }
+    }
+
+  }
 
   return (
 <Container className='d-flex justify-content-center align-items-center'
@@ -23,10 +49,15 @@ style={{height: window.innerHeight - 54}}>
       <Form.Control
         className='mt-3'
         placeholder='Please enter your e-mail...'
+        value={email}
+        onChange={e => setEmail(e.target.value)}
       />
       <Form.Control
         className='mt-3'
         placeholder='Please enter your Password...'
+        value={password}
+        onChange={e => setPassword(e.target.value)}
+        type='password'
       />
 
       <ListGroup horizontal className='d-flex justify-content-between mt-3 pl-3 pr-3'>
@@ -40,7 +71,9 @@ style={{height: window.innerHeight - 54}}>
             </div>
           }
           <Button className='mt-3 pl-3 pr-3'
-            variant={'outline-primary'}>
+            variant={'outline-primary'}
+            onClick={click}
+            >
               {isLogin ? 'Login' : 'Sign In'}
           </Button>
 
