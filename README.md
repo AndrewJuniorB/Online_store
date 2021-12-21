@@ -15,19 +15,10 @@ STORE MAIN PAGE:
 <a href="https://ibb.co/RCZQX20"><img src="https://i.ibb.co/VvrMFVS/Screen-Shot-2021-12-20-at-10-04-38-PM.png" alt="Screen-Shot-2021-12-20-at-10-04-38-PM" border="0"></a>
 
 
-<a href="https://ibb.co/gykz65Z"><img src="https://i.ibb.co/JnD5Cfj/Screen-Shot-2021-12-20-at-10-08-19-PM.png" alt="Screen-Shot-2021-12-20-at-10-08-19-PM" border="1"></a>
-
-
-AUTHORIZATION:
-<a href="https://ibb.co/C67Nd0b"><img src="https://i.ibb.co/5k8tDcr/Screen-Shot-2021-12-20-at-10-04-53-PM.png" alt="Screen-Shot-2021-12-20-at-10-04-53-PM" border="1"></a>
-<a href="https://ibb.co/gSMqvcm"><img src="https://i.ibb.co/dP0CbHj/Screen-Shot-2021-12-20-at-10-05-33-PM.png" alt="Screen-Shot-2021-12-20-at-10-05-33-PM" border="1"></a>
-
-REGISTRATION:
-<a href="https://ibb.co/CbXXb0x"><img src="https://i.ibb.co/0CWWCJP/Screen-Shot-2021-12-20-at-10-05-02-PM.png" alt="Screen-Shot-2021-12-20-at-10-05-02-PM" border="1"></a>
-<a href="https://ibb.co/SfqJQJy"><img src="https://i.ibb.co/9ZRGwGg/Screen-Shot-2021-12-20-at-10-05-49-PM.png" alt="Screen-Shot-2021-12-20-at-10-05-49-PM" border="1"></a>
+<a href="https://ibb.co/gykz65Z"><img src="https://i.ibb.co/JnD5Cfj/Screen-Shot-2021-12-20-at-10-08-19-PM.png" alt="Screen-Shot-2021-12-20-at-10-08-19-PM" border="0"></a>
 
 ADMIN PAGE:
-<a href="https://ibb.co/rs6pYkK"><img src="https://i.ibb.co/M6V1rny/Screen-Shot-2021-12-20-at-10-04-11-PM.png" alt="Screen-Shot-2021-12-20-at-10-04-11-PM" border="0"></a>
+
 <a href="https://ibb.co/6BqmpCQ"><img src="https://i.ibb.co/M6Jsj0d/Screen-Shot-2021-12-20-at-9-08-22-PM.png" alt="Screen-Shot-2021-12-20-at-9-08-22-PM" border="0"></a>
 
 *=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
