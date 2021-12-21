@@ -10,13 +10,14 @@ import DeviceStore from './store/DeviceStore.js';
 
 
 export const Context = createContext(null);
-const apiURL = process.env.REACT_APP_API_URL;
-console.log('API', apiURL);
+
+// const apiURL = process.env.REACT_APP_API_URL;
+// console.log('API', apiURL);
 
 ReactDOM.render(
   <Context.Provider value={{
     user: new UserStore(),
-    device: new DeviceStore()
+    device: new DeviceStore(),
   }}>
       <App />
   </Context.Provider>,

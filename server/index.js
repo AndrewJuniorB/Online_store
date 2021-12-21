@@ -20,16 +20,6 @@ app.use(errorHandler);
 
 const PORT = process.env.PORT || 3000;
 
-  const tests = [
-    { id: 1, course: 'JScript' },
-    { id: 2, course: 'Python' },
-    { id: 3, course: 'Java' },
-    { id: 4, course: 'Swift', default: 'YouGotIt' },
-    { id: 5, course: 'C++', default: 'Private' },
-    { id: 6, course: 'Kotlin', default: 'Public' },
-    { id: 10, course: 'CCC', default: 'Private' }
-  ];
-
 app.get('/', (req, res) => {
   res.status(200);
   // res.status(200).json({message: 'GET REQ WORKING' })

@@ -19,7 +19,7 @@
       <Container className='mt-3'>
         <Row lassName='d-flex flex-column align-items-center mt-2'>
           <Col md={4}>
-            <Image width={300} height={300} src={process.env.REACT_APP_API_URL + device.img} />
+            <Image width={420} height={420} src={process.env.REACT_APP_API_URL + device.img} />
           </Col>
           <Col md={4}>
             <Row className='d-flex flex-column align-items-center'>
