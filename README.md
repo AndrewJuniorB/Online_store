@@ -9,9 +9,10 @@ npm run dev - START SERVER
 
 
 STORE MAIN PAGE:
-<a href="https://ibb.co/KKZK4L7"><img src="https://i.ibb.co/bbhbw2L/Screen-Shot-2021-12-20-at-10-04-27-PM.png" alt="Screen-Shot-2021-12-20-at-10-04-27-PM" border="1" ></a>
 
-<a href="https://ibb.co/RCZQX20"><img src="https://i.ibb.co/VvrMFVS/Screen-Shot-2021-12-20-at-10-04-38-PM.png" alt="Screen-Shot-2021-12-20-at-10-04-38-PM" border="1"></a>
+<a href="https://ibb.co/KKZK4L7"><img src="https://i.ibb.co/bbhbw2L/Screen-Shot-2021-12-20-at-10-04-27-PM.png" alt="Screen-Shot-2021-12-20-at-10-04-27-PM" border="0" ></a>
+
+<a href="https://ibb.co/RCZQX20"><img src="https://i.ibb.co/VvrMFVS/Screen-Shot-2021-12-20-at-10-04-38-PM.png" alt="Screen-Shot-2021-12-20-at-10-04-38-PM" border="0"></a>
 
 
 <a href="https://ibb.co/gykz65Z"><img src="https://i.ibb.co/JnD5Cfj/Screen-Shot-2021-12-20-at-10-08-19-PM.png" alt="Screen-Shot-2021-12-20-at-10-08-19-PM" border="1"></a>
